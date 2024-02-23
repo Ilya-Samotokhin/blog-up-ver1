@@ -40,10 +40,21 @@ btn {
 	line-height: 39px;
 }
 
+.validationTitle,
+.validationText {
+	color: red;
+	margin-bottom: 20px;
+}
+.validationTitle__hidden,
+.validationText__hidden {
+	display: none;
+}
+
 .new-post__text {
 	margin-bottom: 20px;
 	padding: 10px;
 	width: 100%;
+	resize: none;
 	border: 1px solid black;
 	border-radius: 5px;
 	font-size: 32px;
@@ -60,6 +71,11 @@ btn {
 	font-size: 26px;
 	line-height: 30px;
 	color: white;
+	transition: opacity 0.3s;
+}
+
+.new-post__btn:not([disabled]):hover {
+	opacity: 0.5;
 }
 
 .clear-post__btn {
@@ -71,6 +87,10 @@ btn {
 	font-size: 26px;
 	line-height: 30px;
 	color: white;
+}
+
+.clear-post__btn:hover {
+	opacity: 0.5;
 }
 
 .posts-section {

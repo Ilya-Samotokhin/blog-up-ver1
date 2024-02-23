@@ -17,9 +17,11 @@
   <div class="row">
     <div class="new-post">
       <h2 class="subtitle">Новый пост</h2>
-      <input class="js-new-post__title new-post__title" type="text" name="subtitle" minlength="2" maxlength="32"
-        required>
-      <textarea name="text" class="js-new-post__text new-post__text" cols="30" rows="10"></textarea>
+      <input class="js-new-post__title new-post__title" type="text" placeholder="Введите заголовок" name="subtitle">
+      <div class="js-validationTitle validationTitle validationTitle__hidden"></div>
+      <textarea name="text" class="js-new-post__text new-post__text" cols="30" placeholder="Введите текст"
+        rows="10"></textarea>
+      <div class="js-validationText validationText validationText__hidden"></div>
       <button class="js-new-post__btn new-post__btn">Опубликовать</button>
       <button class="js-clear-post__btn clear-post__btn">Очистить ленту</button>
     </div>
